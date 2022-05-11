@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">App Dev</string>
+    <string name="title_text">Fortune Factory Clicker</string>
+    <string name="label_factory_name">Fortune name</string>
+    <string name="input_factory_name_hint">Your factory name</string>
+    <string name="input_factory_name_text">Fortune Fact</string>
+    <string name="button_launch">Launch</string>
+</resources>
