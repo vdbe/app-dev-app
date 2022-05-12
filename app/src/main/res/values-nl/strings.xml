@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">App Dev</string>
+    <string name="title_text">Fortuin Fabriek Klikker</string>
+    <string name="label_factory_name">Fortuin naam</string>
+    <string name="input_factory_name_hint">Jouw fabkrieks naam</string>
+    <string name="input_factory_name_text">Toekomst fabriek</string>
+    <string name="button_launch">Lanceer</string>
+</resources>
