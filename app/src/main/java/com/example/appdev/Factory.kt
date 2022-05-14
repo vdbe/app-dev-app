@@ -1,11 +1,15 @@
 package com.example.appdev
 
 import DBHelper
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.EditText
 import android.widget.TextView
+import androidx.activity.result.contract.ActivityResultContract
+import androidx.activity.result.contract.ActivityResultContracts
 
 class Factory : AppCompatActivity() {
     private var counter = 0;
@@ -44,7 +48,7 @@ class Factory : AppCompatActivity() {
         }
     }
 
-    override fun onDestroy() {
+    override fun onPause() {
         val db = DBHelper(this, null)
         val cursor = db.getFactoryByName(this.factoryName)
 
@@ -57,8 +61,7 @@ class Factory : AppCompatActivity() {
             db.editFactory(id, this.factoryName, this.counter)
         }
         db.close()
-
-        super.onDestroy()
+        super.onPause()
     }
 
     fun cookieClick(view: View) {
@@ -66,5 +69,18 @@ class Factory : AppCompatActivity() {
         findViewById<TextView>(R.id.counterTextView).apply {
             text = counter.toString();
         }
+    }
+
+    fun eatCookies(view: View) {
+        var counter = this.counter
+        val intent = Intent(this, EaterActivity::class.java).apply {
+            putExtra("COOKIE_COUNT", counter)
+        }
+        //startActivity(intent)
+        cookiesEat.launch(intent)
+    }
+
+    private val cookiesEat = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
+        Log.d("CONSUMED", "IDFK")
     }
 }

@@ -6,4 +6,5 @@
     <string name="input_factory_name_hint">Jouw fabkrieks naam</string>
     <string name="input_factory_name_text">Toekomst fabriek</string>
     <string name="button_launch">Lanceer</string>
+    <string name="cookie_collection">Koekjes verzameling</string>
 </resources>

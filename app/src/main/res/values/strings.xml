@@ -5,4 +5,5 @@
     <string name="input_factory_name_hint">Your factory name</string>
     <string name="input_factory_name_text">Fortune Fact</string>
     <string name="button_launch">Launch</string>
+    <string name="cookie_collection">Cookie collection</string>
 </resources>
