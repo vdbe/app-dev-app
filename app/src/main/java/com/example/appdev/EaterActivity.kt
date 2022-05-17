@@ -23,20 +23,5 @@ class EaterActivity : AppCompatActivity() {
 
         recyclerView.adapter = EaterAdapter(eatList)
 
-        /*
-        recyclerView.adapter = EaterAdapter(audioList, object: AudioAdapter.ActionListener {
-            override fun onClicked(audioID: Int) {
-                if (mBound) {
-                    mService.play(audioID, 1.0F)
-                }
-            }
-
-            override fun onLongClicked(audioID: Int) {
-                val db = DBHelper(this@MainActivity, null)
-                db.deleteAudio(audioID)
-                viewModel.loadAudio(this@MainActivity)
-            }
-        })
-         */
     }
 }

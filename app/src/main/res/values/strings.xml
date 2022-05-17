@@ -6,4 +6,6 @@
     <string name="input_factory_name_text">Fortune Fact</string>
     <string name="button_launch">Launch</string>
     <string name="cookie_collection">Cookie collection</string>
+    <string name="preference_quote">Inspirational quote</string>
+    <string name="preference_toast">Toast message on cookie click</string>
 </resources>

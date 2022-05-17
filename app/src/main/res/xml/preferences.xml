@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="toast_preference"
+        android:title="Toast message on cookie" />
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="quote_preference"
+        android:title="Switch preference" />
+</PreferenceScreen>
