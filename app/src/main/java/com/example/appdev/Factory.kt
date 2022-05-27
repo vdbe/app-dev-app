@@ -8,8 +8,10 @@ import android.util.Log
 import android.view.View
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContract
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.preference.PreferenceManager
 
 class Factory : AppCompatActivity() {
     private var counter = 0;
@@ -68,6 +70,11 @@ class Factory : AppCompatActivity() {
         this.counter += 1;
         findViewById<TextView>(R.id.counterTextView).apply {
             text = counter.toString();
+        }
+
+        if(PreferenceManager.getDefaultSharedPreferences(this).getBoolean("toast_preference", false)) {
+            val toast = Toast.makeText(applicationContext, "COOKIE!!!", Toast.LENGTH_LONG);
+            toast.show();
         }
     }
 

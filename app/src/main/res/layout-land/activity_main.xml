@@ -63,4 +63,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/layoutInputFactory" />
 
+    <TextView
+        android:id="@+id/quoteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="git commit -a --allow-empty-message -am ''"
+        app:layout_constraintBottom_toTopOf="@+id/layoutInputFactory"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleText" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

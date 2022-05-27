@@ -3,9 +3,9 @@
     <SwitchPreference
         android:defaultValue="false"
         android:key="toast_preference"
-        android:title="Toast message on cookie" />
+        android:title="@string/preference_toast" />
     <SwitchPreference
-        android:defaultValue="false"
+        android:defaultValue="true"
         android:key="quote_preference"
-        android:title="Switch preference" />
+        android:title="@string/preference_quote" />
 </PreferenceScreen>

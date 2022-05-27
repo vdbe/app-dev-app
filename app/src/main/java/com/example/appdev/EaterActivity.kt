@@ -22,6 +22,5 @@ class EaterActivity : AppCompatActivity() {
         recyclerView.setHasFixedSize(true)
 
         recyclerView.adapter = EaterAdapter(eatList)
-
     }
 }

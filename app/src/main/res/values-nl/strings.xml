@@ -9,4 +9,5 @@
     <string name="cookie_collection">Koekjes verzameling</string>
     <string name="preference_quote">Inspirerende quote</string>
     <string name="preference_toast">Toast bericht op koekje klik</string>
+    <string name="settings">Instellingen</string>
 </resources>
